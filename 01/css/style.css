@@ -41,6 +41,12 @@ li {
   position: absolute;
   top: 0;
   right: 0;
+  transition: 0.3s;
+}
+
+.faq-wrap > ul > li.on > strong::after {
+  border-color: #f00; /* bdc */
+  transform: rotate(315deg);
 }
 
 .answer {
