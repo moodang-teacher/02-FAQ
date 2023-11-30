@@ -1,0 +1,50 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.faq-wrap {
+  width: 80%;
+  margin: 50px auto;
+}
+.faq-wrap > ul > li {
+  border: 1px solid #000;
+  padding: 30px;
+  margin: 10px 0;
+}
+
+.faq-wrap > ul > li > strong {
+  /* background: #ff5; */
+  display: block;
+  position: relative;
+}
+.faq-wrap > ul > li > strong::before {
+  content: 'Q ';
+  color: #f00;
+}
+.faq-wrap > ul > li > strong::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: solid #000;
+  border-width: 3px 3px 0 0;
+  transform: rotate(135deg); /* trfr */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.answer {
+  background: #f5f5f5;
+  padding: 30px;
+  display: none; /* jQuery 효과 메서드를 위한 준비 */
+}
